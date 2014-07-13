@@ -183,6 +183,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       margin-right:-35%;
       position:relative;
       z-index:2;
+      vertical-align:top;
       }
     .webkite-form-block-two{
       @include boxedUp;
@@ -190,6 +191,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       display:inline-block;
       width:100%;
       position:relative;
+      vertical-align:top;
       .webkite-search-divider{
         display:inline-block;
         padding-left:$mainGutter/2;
@@ -216,6 +218,8 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       color:$locationFormColor;
       font-size:inherit;
       font-weight:normal;
+      height:30px;
+      vertical-align:top;
       }
     .webkite-styled-select{
       @include boxedUp;
@@ -240,9 +244,11 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
         margin-top:-2px;
         }
       select{
+        @include boxedUp;
         border:none;
         outline:none;
         padding:$mainGutter/5 $mainGutter/4;
+        padding-right:0px \ ;
         color:$locationFormColor;
         font-size:inherit;
         font-weight:bold;
@@ -250,13 +256,18 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
         background-image:none;
         -webkit-appearance:none;
         -moz-appearance:none;
+        -ms-appearance:none;
+        -o-appearance:none;
         appearance:none;
-        width:130%;
-        height:30px;
+        width:140%;
+        height:28px;
+        margin:0;
         vertical-align:bottom;
+        &::-ms-expand{display:none;}
         &:focus{outline:none;}
         option{
           background:#fff;
+          background:transparent\0;
           border:none;
           }
         }

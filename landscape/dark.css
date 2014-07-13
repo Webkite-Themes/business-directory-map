@@ -661,7 +661,8 @@
     width: 35%;
     margin-right: -35%;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    vertical-align: top; }
   #webkite-results .webkite-location-search .webkite-form-block-two {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -669,7 +670,8 @@
     padding-left: 35%;
     display: inline-block;
     width: 100%;
-    position: relative; }
+    position: relative;
+    vertical-align: top; }
     #webkite-results .webkite-location-search .webkite-form-block-two .webkite-search-divider {
       display: inline-block;
       padding-left: 10px;
@@ -697,7 +699,9 @@
     padding: 6px 5px;
     color: rgba(0, 0, 0, 0.5);
     font-size: inherit;
-    font-weight: normal; }
+    font-weight: normal;
+    height: 30px;
+    vertical-align: top; }
   #webkite-results .webkite-location-search .webkite-styled-select {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -726,9 +730,13 @@
       right: 5px;
       margin-top: -2px; }
     #webkite-results .webkite-location-search .webkite-styled-select select {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
       border: none;
       outline: none;
       padding: 4px 5px;
+      padding-right: 0px \ ;
       color: rgba(255, 255, 255, 0.7);
       font-size: inherit;
       font-weight: bold;
@@ -736,15 +744,19 @@
       background-image: none;
       -webkit-appearance: none;
       -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
       appearance: none;
-      width: 130%;
-      height: 30px;
+      width: 140%;
+      height: 28px;
+      margin: 0;
       vertical-align: bottom; }
       #webkite-results .webkite-location-search .webkite-styled-select select:focus {
         outline: none; }
       #webkite-results .webkite-location-search .webkite-styled-select select option {
         color: rgba(0, 0, 0, 0.5);
         background: #fff;
+        background: transparent\0;
         border: none; }
   #webkite-results .webkite-location-search .webkite-form-block-one .webkite-search-label {
     width: 90px;
