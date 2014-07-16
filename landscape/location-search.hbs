@@ -1,6 +1,6 @@
-{{#if (find facets filterable=true name="Location")}}
+{{#if (find facets filterable=true name="Full Address")}}
   <div class="webkite-location-search">
-    {{#facet name="Location"}}
+    {{#facet name="Full Address"}}
       <form action='#'>
         <input type='hidden' value='{{name}}' name='facet' class='webkite-location-facet' />
         <input type='hidden' value='near' name='operation' class='webkite-location-operation' />
