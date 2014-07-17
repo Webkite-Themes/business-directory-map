@@ -636,10 +636,10 @@
       display: inline-block;
       width: 100%;
       text-align: center; }
-    #webkite-results .webkite-map-info-window .webkite-map-info-details .webkite-add-location-link {
+    #webkite-results .webkite-map-info-window .webkite-map-info-details .webkite-location-add-filter {
       width: 50%;
       text-align: left; }
-      #webkite-results .webkite-map-info-window .webkite-map-info-details .webkite-add-location-link + .webkite-toggle-item {
+      #webkite-results .webkite-map-info-window .webkite-map-info-details .webkite-location-add-filter + .webkite-toggle-item {
         width: 50%;
         text-align: right; }
 
@@ -798,7 +798,7 @@
     padding-top: 7px;
     padding-bottom: 7px;
     cursor: pointer; }
-  #webkite-results .webkite-location-search .webkite-add-location-search, #webkite-results .webkite-location-search .webkite-add-location-search:hover {
+  #webkite-results .webkite-location-search .webkite-location-submit, #webkite-results .webkite-location-search .webkite-location-submit:hover {
     background-image: url('mag-glass.png');
     background-repeat: no-repeat;
     background-position: center center;

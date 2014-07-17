@@ -2,12 +2,12 @@
   <div class="webkite-location-search">
     {{#facet name="Full Address"}}
       <form action='#'>
-        <input type='hidden' value='{{name}}' name='facet' class='webkite-location-facet' />
-        <input type='hidden' value='near' name='operation' class='webkite-location-operation' />
+        <input type='hidden' value='{{name}}' name='webkite-location-facet' class='webkite-location-facet' />
+        <input type='hidden' value='near' name='webkite-location-operation' class='webkite-location-operation' />
         <div class="webkite-form-block-one">
           <span class="form-block webkite-search-label">Search within</span><!--
        --><span class="form-block webkite-search-miles">
-            <input type='text' value="{{#with (find ../../filters.currentFilters facet=name)}}{{distance}}{{/with}}" name='distance' class='webkite-location-miles' />
+            <input type='text' value="{{#with (find ../../filters.currentFilters facet=name)}}{{distance}}{{/with}}" name='webkite-location-distance' class='webkite-location-miles' />
           </span><!--
        --><span class="form-block webkite-search-units">
             <span class="webkite-styled-select">
@@ -21,7 +21,7 @@
      --><div class="webkite-form-block-two{{#if (find ../../filters.currentFilters facet=name)}} webkite-filter-active{{/if}}">
           <span class="webkite-search-divider">of</span><!--
        --><span class="form-block webkite-search-address">
-            <input type='text' value="{{#with (find ../../filters.currentFilters facet=name)}}{{address}}{{/with}}" name='address' placeholder="address or landmark" class='webkite-location-address' />
+            <input type='text' value="{{#with (find ../../filters.currentFilters facet=name)}}{{address}}{{/with}}" name='webkite-location-address' placeholder="address or landmark" class='webkite-location-address' />
           {{~#if (find ../../filters.currentFilters facet=name)~}}
             <a href="#" class='webkite-remove-filter webkite-remove-location-search'
                   data-facet="{{name}}" 
@@ -30,7 +30,7 @@
           {{~/if~}}
           </span><!--
        --><span class="webkite-location-buttons">
-            <input type='button' class='webkite-add-location-search webkite-button' name='webkite-add-location-search' value="Go!" />
+            <input type='button' class='webkite-location-submit webkite-button' name='webkite-location-submit' value="Go!" />
           </span>
         </div>
       </form>

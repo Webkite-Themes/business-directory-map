@@ -154,7 +154,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
         width:100%;
         text-align:center;
         }
-      .webkite-add-location-link{
+      .webkite-location-add-filter{
         width:50%;
         text-align:left;
         + .webkite-toggle-item{
@@ -321,8 +321,8 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       padding-bottom:7px;
       cursor:pointer;
       }
-    .webkite-add-location-search,
-    .webkite-add-location-search:hover {
+    .webkite-location-submit,
+    .webkite-location-submit:hover {
       background-image:url('mag-glass.png');
       background-repeat: no-repeat;
       background-position: center center;
