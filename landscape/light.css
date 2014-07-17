@@ -537,6 +537,8 @@
   box-sizing: border-box;
   width: 100%;
   height: 300px; }
+  #webkite-results #webkite-map-wrapper img {
+    max-width: none; }
 #webkite-results .webkite-map-item {
   display: none;
   height: 0;
@@ -696,12 +698,19 @@
     border-radius: 2px;
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    display: inline-block;
     padding: 6px 5px;
+    margin: 0;
     color: rgba(0, 0, 0, 0.5);
     font-size: inherit;
     font-weight: normal;
     height: 30px;
-    vertical-align: top; }
+    vertical-align: top;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    #webkite-results .webkite-location-search input[type="text"]:focus {
+      background: #fff; }
   #webkite-results .webkite-location-search .webkite-styled-select {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -738,6 +747,7 @@
       padding: 4px 5px;
       padding-right: 0px \ ;
       color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
       font-size: inherit;
       font-weight: bold;
       background-color: transparent;
@@ -748,13 +758,18 @@
       -o-appearance: none;
       appearance: none;
       width: 140%;
+      max-width: none;
       height: 28px;
       margin: 0;
-      vertical-align: bottom; }
+      vertical-align: bottom;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
       #webkite-results .webkite-location-search .webkite-styled-select select::-ms-expand {
         display: none; }
       #webkite-results .webkite-location-search .webkite-styled-select select:focus {
-        outline: none; }
+        outline: none;
+        background: none; }
       #webkite-results .webkite-location-search .webkite-styled-select select option {
         background: #fff;
         background: transparent\0;
@@ -1081,6 +1096,8 @@
   #webkite-results .webkite-modal-content .webkite-item-map {
     height: 250px;
     display: block !important; }
+    #webkite-results .webkite-modal-content .webkite-item-map img {
+      max-width: none; }
   #webkite-results .webkite-modal-content .webkite-toggle-group {
     display: none; }
   #webkite-results .webkite-modal-content .webkite-result {
