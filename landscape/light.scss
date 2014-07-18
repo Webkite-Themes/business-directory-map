@@ -118,6 +118,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       margin:0;
       padding-right:20px;
       color:rgba(0,0,0,0.7);
+      clear:none;
       }
     .webkite-result-address{
       display:block;
@@ -332,6 +333,9 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       padding-top:7px;
       padding-bottom:7px;
       cursor:pointer;
+      -moz-box-shadow:none;
+      -webkit-box-shadow:none;
+      box-shadow:none;
       }
     .webkite-location-submit,
     .webkite-location-submit:hover {

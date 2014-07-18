@@ -589,7 +589,8 @@
     padding-bottom: 10px;
     margin: 0;
     padding-right: 20px;
-    color: rgba(0, 0, 0, 0.7); }
+    color: rgba(0, 0, 0, 0.7);
+    clear: none; }
   #webkite-results .webkite-map-info-window .webkite-result-address {
     display: block;
     margin: 0;
@@ -812,7 +813,10 @@
     height: 30px;
     padding-top: 7px;
     padding-bottom: 7px;
-    cursor: pointer; }
+    cursor: pointer;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
   #webkite-results .webkite-location-search .webkite-location-submit, #webkite-results .webkite-location-search .webkite-location-submit:hover {
     background-image: url('mag-glass.png');
     background-repeat: no-repeat;
