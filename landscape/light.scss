@@ -107,6 +107,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       margin-left:-8px;
       z-index:1;
       }
+    > img {@include roundedUp(0px)}
     }
   .webkite-map-info-window{
     font-size:14px;
