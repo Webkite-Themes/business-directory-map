@@ -115,7 +115,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
     h2 {
       font-size:18px; 
       font-weight:400; 
-      padding-bottom:$mainGutter/2; 
+      padding-bottom:$mainGutter/4; 
       margin:0;
       padding-right:20px;
       color:rgba(0,0,0,0.7);
@@ -125,7 +125,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       display:block;
       margin:0;
       padding:0;
-      padding-bottom:$mainGutter/2; 
+      padding-bottom:$mainGutter/4; 
       span + span:before {content:"";}
       span.webkite-address-one{display:block}
       span.webkite-address-two{display:block;}
@@ -137,7 +137,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       }
     .webkite-result-phone{
       display:block;
-      padding-bottom:$mainGutter/2;
+      padding-bottom:$mainGutter/4;
       margin:0;
       }
     .webkite-map-info-details{
@@ -409,7 +409,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
     margin:0;
     margin-left:-$mainGutter;
     margin-right:-$mainGutter;
-    padding:$mainGutter/2 $mainGutter;
+    padding:12px $mainGutter;
     color:$lightOpacity;
     &.webkite-highlight{
       background:$highlightColor;
@@ -424,14 +424,14 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
     @include roundedUp(4px);
     display:inline-block;
     vertical-align:top;
-    width:150px;
-    height:150px;
+    width:90px;
+    height:90px;
     position:relative;
-    margin-right:-150px;
+    margin-right:-90px;
     overflow:hidden;
     + .webkite-result-body {
       width:100%;
-      padding-left:$mainGutter + 150px;
+      padding-left:$mainGutter + 90px;
       }
     .webkite-image{
       position:absolute;
@@ -448,13 +448,22 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
     @include boxedUp;
     display:inline-block;
     vertical-align:top;
+    width:100%;
+    line-height:1.15em;
     }
   .webkite-result-name {
-    margin-bottom:$mainGutter/2;
+    margin-bottom:$mainGutter/4;
+    margin-top:-3px;
+    + .webkite-result-category{
+      margin-top:-$mainGutter/5;
+      }
+    }
+  .webkite-result-category{
+    margin-bottom:$mainGutter/4;
     }
   .webkite-result-address{
     display:block;
-    margin-top:$mainGutter/2;
+    margin-top:$mainGutter/4;
     span + span:before{content: " ";}
     span.webkite-address-one + span:before{content: ", ";}
     span.webkite-address-two + span:before{content: ", ";}
@@ -463,12 +472,12 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
     }
   .webkite-result-phone{
     display:block;
-    margin-top:$mainGutter/2;
+    margin-top:0px;
     }
   .webkite-list-horizontal {
     margin:0;
     padding:0;
-    margin-top:$mainGutter/2;
+    margin-top:$mainGutter/4;
     list-style:none;
     display:block;
     li{
@@ -490,7 +499,6 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
     padding: $mainGutter/4 $mainGutter/2;
     margin-top: $mainGutter;
     text-align: center;
-    width: 4.375em;
     }
   a.more-button, .webkite-button{
     background: $linkColor;
@@ -618,6 +626,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
     .webkite-description{
       padding:0;
       margin-top:$mainGutter/2;
+      margin-bottom:$mainGutter/2;
       }
     .webkite-result-address{
       display:block;
@@ -632,7 +641,8 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       span.webkite-country{display:block;}
       }
     .webkite-list-horizontal{
-      margin-top:$mainGutter;
+      margin-top:$mainGutter/4;
+      overflow:hidden;
       }
     }
   .webkite-modal-foot{
@@ -730,15 +740,6 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       }
     }
 
-  .webkite-image-wrapper {
-    width:100px;
-    height:100px;
-    margin-right:-100px;
-    + .webkite-result-body {
-      width:100%;
-      padding-left:$mainGutter + 100px;
-      }
-    }
   }
   
 /*********** MODAL QUERIES */

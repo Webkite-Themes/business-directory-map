@@ -592,7 +592,7 @@
   #webkite-results .webkite-map-info-window h2 {
     font-size: 18px;
     font-weight: 400;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin: 0;
     padding-right: 20px;
     color: rgba(0, 0, 0, 0.7);
@@ -601,7 +601,7 @@
     display: block;
     margin: 0;
     padding: 0;
-    padding-bottom: 10px; }
+    padding-bottom: 5px; }
     #webkite-results .webkite-map-info-window .webkite-result-address span + span:before {
       content: ""; }
     #webkite-results .webkite-map-info-window .webkite-result-address span.webkite-address-one {
@@ -621,7 +621,7 @@
       display: block; }
   #webkite-results .webkite-map-info-window .webkite-result-phone {
     display: block;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin: 0; }
   #webkite-results .webkite-map-info-window .webkite-map-info-details {
     -webkit-border-radius: 0 0 2px 2px;
@@ -884,7 +884,7 @@
   margin: 0;
   margin-left: -20px;
   margin-right: -20px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   color: rgba(255, 255, 255, 0.7); }
   #webkite-results .webkite-result.webkite-highlight {
     background: rgba(255, 255, 255, 0.1);
@@ -906,14 +906,14 @@
   border-radius: 4px;
   display: inline-block;
   vertical-align: top;
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
   position: relative;
-  margin-right: -150px;
+  margin-right: -90px;
   overflow: hidden; }
   #webkite-results .webkite-image-wrapper + .webkite-result-body {
     width: 100%;
-    padding-left: 170px; }
+    padding-left: 110px; }
   #webkite-results .webkite-image-wrapper .webkite-image {
     position: absolute;
     top: 0;
@@ -929,12 +929,19 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  width: 100%;
+  line-height: 1.15em; }
 #webkite-results .webkite-result-name {
-  margin-bottom: 10px; }
+  margin-bottom: 5px;
+  margin-top: -3px; }
+  #webkite-results .webkite-result-name + .webkite-result-category {
+    margin-top: -4px; }
+#webkite-results .webkite-result-category {
+  margin-bottom: 5px; }
 #webkite-results .webkite-result-address {
   display: block;
-  margin-top: 10px; }
+  margin-top: 5px; }
   #webkite-results .webkite-result-address span + span:before {
     content: " "; }
   #webkite-results .webkite-result-address span.webkite-address-one + span:before {
@@ -947,11 +954,11 @@
     content: ", "; }
 #webkite-results .webkite-result-phone {
   display: block;
-  margin-top: 10px; }
+  margin-top: 0px; }
 #webkite-results .webkite-list-horizontal {
   margin: 0;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 5px;
   list-style: none;
   display: block; }
   #webkite-results .webkite-list-horizontal li {
@@ -979,8 +986,7 @@
   font: 400 .75em/1 'Open Sans', 'Arial', sans-serif;
   padding: 5px 10px;
   margin-top: 20px;
-  text-align: center;
-  width: 4.375em; }
+  text-align: center; }
 #webkite-results a.more-button, #webkite-results .webkite-button {
   background: #1b9cd2; }
   #webkite-results a.more-button:hover, #webkite-results .webkite-button:hover {
@@ -1131,7 +1137,8 @@
       padding-left: 210px; }
   #webkite-results .webkite-modal-content .webkite-description {
     padding: 0;
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-bottom: 10px; }
   #webkite-results .webkite-modal-content .webkite-result-address {
     display: block; }
     #webkite-results .webkite-modal-content .webkite-result-address span + span:before {
@@ -1154,7 +1161,7 @@
     #webkite-results .webkite-modal-content .webkite-result-address span.webkite-country {
       display: block; }
   #webkite-results .webkite-modal-content .webkite-list-horizontal {
-    margin-top: 20px; }
+    margin-top: 5px; }
 #webkite-results .webkite-modal-foot {
   border-top: 1px solid rgba(255, 255, 255, 0.3); }
   #webkite-results .webkite-modal-foot .webkite-toggle-item {
@@ -1229,13 +1236,6 @@
     margin-left: -52px; }
 #webkite-results.sm .webkite-location-search .webkite-form-block-two {
   padding-left: 45%; }
-#webkite-results.sm .webkite-image-wrapper {
-  width: 100px;
-  height: 100px;
-  margin-right: -100px; }
-  #webkite-results.sm .webkite-image-wrapper + .webkite-result-body {
-    width: 100%;
-    padding-left: 120px; }
 
 /*********** MODAL QUERIES */
 /* modal sizings */
