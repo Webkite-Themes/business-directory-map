@@ -414,12 +414,17 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
     margin-right:-$mainGutter;
     padding:12px $mainGutter;
     color:$lightOpacity;
-    &.webkite-highlight{
+    &:nth-child(even){
+      background:rgba(0,0,0,0.02);
+      }
+    }
+  #webkite-results-list {
+    margin-bottom:$mainGutter/2;
+    .webkite-result.webkite-highlight{
       background:$highlightColor;
       color:$medOpacity;
       }
     }
-  #webkite-results-list {margin-bottom:$mainGutter/2;}
   .webkite-results-header + #webkite-results-list {margin-top:-$mainGutter/2;}
   .webkite-result + .webkite-results-footer {margin-top:$mainGutter/2;}
   .webkite-image-wrapper {
@@ -618,6 +623,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       max-height:260px;
       overflow:hidden;
       overflow-y:auto;
+      background:none;
       }
     .webkite-image-wrapper {
       @include roundedUp(3px);

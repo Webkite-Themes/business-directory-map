@@ -886,11 +886,13 @@
   margin-right: -20px;
   padding: 12px 20px;
   color: rgba(0, 0, 0, 0.6); }
-  #webkite-results .webkite-result.webkite-highlight {
-    background: #eff5fa;
-    color: rgba(0, 0, 0, 0.7); }
+  #webkite-results .webkite-result:nth-child(even) {
+    background: rgba(0, 0, 0, 0.02); }
 #webkite-results #webkite-results-list {
   margin-bottom: 10px; }
+  #webkite-results #webkite-results-list .webkite-result.webkite-highlight {
+    background: #eff5fa;
+    color: rgba(0, 0, 0, 0.7); }
 #webkite-results .webkite-results-header + #webkite-results-list {
   margin-top: -10px; }
 #webkite-results .webkite-result + .webkite-results-footer {
@@ -1125,7 +1127,8 @@
     padding: 0 10px 0 0;
     max-height: 260px;
     overflow: hidden;
-    overflow-y: auto; }
+    overflow-y: auto;
+    background: none; }
   #webkite-results .webkite-modal-content .webkite-image-wrapper {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
