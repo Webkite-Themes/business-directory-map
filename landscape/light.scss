@@ -1,5 +1,8 @@
 $colorVariant:light;
 
+// get 600 weight for Open Sans too
+@import url("//fonts.googleapis.com/css?family=Open+Sans:600");
+
 //CALL UNIVERSALS
 @import '../globals/universals';
 
@@ -114,7 +117,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
     color:rgba(0,0,0,0.6);
     h2 {
       font-size:18px; 
-      font-weight:400; 
+      font-weight:600; 
       padding-bottom:$mainGutter/4; 
       margin:0;
       padding-right:20px;
@@ -454,6 +457,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
   .webkite-result-name {
     margin-bottom:$mainGutter/4;
     margin-top:-3px;
+    font-weight:600;
     + .webkite-result-category{
       margin-top:-$mainGutter/5;
       }

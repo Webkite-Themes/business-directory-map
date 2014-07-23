@@ -1,3 +1,4 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:600");
 @import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
 /* RESET */
 #webkite-results {
@@ -591,7 +592,7 @@
   color: rgba(0, 0, 0, 0.6); }
   #webkite-results .webkite-map-info-window h2 {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     padding-bottom: 5px;
     margin: 0;
     padding-right: 20px;
@@ -934,7 +935,8 @@
   line-height: 1.15em; }
 #webkite-results .webkite-result-name {
   margin-bottom: 5px;
-  margin-top: -3px; }
+  margin-top: -3px;
+  font-weight: 600; }
   #webkite-results .webkite-result-name + .webkite-result-category {
     margin-top: -4px; }
 #webkite-results .webkite-result-category {
