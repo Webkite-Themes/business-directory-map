@@ -941,6 +941,10 @@
   font-weight: 600; }
   #webkite-results .webkite-result-name + .webkite-result-category {
     margin-top: -4px; }
+  #webkite-results .webkite-result-name + .webkite-result-distance {
+    margin-top: -4px; }
+#webkite-results .webkite-result-distance {
+  display: block; }
 #webkite-results .webkite-result-category {
   margin-bottom: 5px; }
 #webkite-results .webkite-result-address {
@@ -1242,6 +1246,17 @@
     margin-left: -52px; }
 #webkite-results.sm .webkite-location-search .webkite-form-block-two {
   padding-left: 45%; }
+
+#webkite-results.md #webkite-results-list .webkite-result-name {
+  padding-right: 150px; }
+  #webkite-results.md #webkite-results-list .webkite-result-name + .webkite-result-distance + .webkite-result-category {
+    margin-top: -4px; }
+#webkite-results.md .webkite-result-distance {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  margin-top: 0px;
+  opacity: 0.8; }
 
 /*********** MODAL QUERIES */
 /* modal sizings */

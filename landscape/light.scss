@@ -466,6 +466,12 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
     + .webkite-result-category{
       margin-top:-$mainGutter/5;
       }
+    + .webkite-result-distance{
+      margin-top:-$mainGutter/5;
+      }
+    }
+  .webkite-result-distance{
+    display:block;
     }
   .webkite-result-category{
     margin-bottom:$mainGutter/4;
@@ -750,7 +756,22 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
       padding-left:45%;
       }
     }
-
+  }
+  
+#webkite-results.md{
+  #webkite-results-list .webkite-result-name{
+    padding-right:150px;
+    + .webkite-result-distance + .webkite-result-category{
+      margin-top:-$mainGutter/5;
+      }
+    }
+  .webkite-result-distance{
+    position:absolute;
+    right:20px;
+    top:12px;
+    margin-top:0px;
+    opacity:0.8;
+    }
   }
   
 /*********** MODAL QUERIES */
