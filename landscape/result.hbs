@@ -8,7 +8,7 @@
     {{#facet name="Business Name"}}<h2 class="webkite-result-name">{{displayValue}}</h2>{{/facet}}
     {{#facet name="Geolocation"}}
       {{#all properties.distance properties.distance_units }}
-        <span class="webkite-result-distance">{{properties.distance}}{{properties.distance_units}} {{t "away" default="away"}}</span>
+        <span class="webkite-result-distance">{{properties.distance}} {{properties.distance_units}} {{t "away" default="away"}}</span>
       {{/all}}
     {{/facet}}
     {{#facet name="Category"}}
@@ -38,7 +38,7 @@
         
     {{#any (find facets name="Website") (find facets name="Email") (find facets name="Fax Number") (find facets name="Facebook") (find facets name="Twitter")}}
       <ul class="webkite-list-horizontal">
-        <li><a href="#" data-id="{{this.id}}" class="webkite-toggle-item" data-toggle="modal" data-speed="100ms">details</a></li>
+        <li><a href="#" data-id="{{this.id}}" class="webkite-toggle-item" data-toggle="modal" data-speed="100ms">{{downcase (t "Details" default="details")}}</a></li>
         {{~#facet name="Website"~}}
           <li><a class="webkite-website" href="{{displayValue}}" target="_blank">{{downcase displayName}}</a></li>
         {{~/facet~}}
