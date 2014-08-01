@@ -352,8 +352,7 @@ $groupButtonHoverColor: rgba(255,255,255,0.2);
       font-size:inherit;
       float:none;
       height:30px;
-      padding-top:7px;
-      padding-bottom:7px;
+      padding:7px 10px;
       cursor:pointer;
       -moz-box-shadow:none;
       -webkit-box-shadow:none;
@@ -366,6 +365,7 @@ $groupButtonHoverColor: rgba(255,255,255,0.2);
       background-position: center center;
       width: $mainGutter*2;
       text-indent:-99999px;
+      vertical-align:top;
       }
     .webkite-filter-active{
       .webkite-search-address{

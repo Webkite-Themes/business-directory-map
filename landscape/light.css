@@ -801,8 +801,7 @@
     font-size: inherit;
     float: none;
     height: 30px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 7px 10px;
     cursor: pointer;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
@@ -812,7 +811,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     width: 40px;
-    text-indent: -99999px; }
+    text-indent: -99999px;
+    vertical-align: top; }
   #webkite-results .webkite-location-search .webkite-filter-active .webkite-search-address {
     position: relative; }
     #webkite-results .webkite-location-search .webkite-filter-active .webkite-search-address input {
