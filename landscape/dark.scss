@@ -219,6 +219,7 @@ $groupButtonHoverColor: rgba(255,255,255,0.2);
     .form-block {
       @include boxedUp;
       display:inline-block;
+      vertical-align:top;
       }
     .form-block + .form-block {
       padding-left:$mainGutter/2;

@@ -762,7 +762,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: top; }
   #webkite-results .webkite-location-search .form-block + .form-block {
     padding-left: 10px; }
   #webkite-results .webkite-location-search .form-block + input, #webkite-results .webkite-location-search .form-block + .webkite-button {
