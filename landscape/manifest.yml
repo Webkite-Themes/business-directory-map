@@ -2,6 +2,8 @@ theme:
   name: business-directory-map-landscape
   
 settings:
+  embeddable:
+    true
   pagination:
     - 10
     - 25
