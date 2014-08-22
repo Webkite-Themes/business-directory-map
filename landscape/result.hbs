@@ -1,12 +1,20 @@
-<section data-marker-target="{{id}}" class="webkite-result">
+<section data-marker-target="{{id}}" class="webkite-result" itemscope itemtype="http://schema.org/Organization">
   {{#facet name="Image"~}}
     <div class="webkite-image-wrapper">
-      <div class="webkite-image" style="background-image:url({{displayValue}})"><img src="{{displayValue}}"/></div>
+      <div class="webkite-image" style="background-image:url({{displayValue}})"><img src="{{displayValue}}" itemprop="image"/></div>
     </div>
   {{~/facet~}}
   <div class="webkite-result-body">
-    {{#facet name="Business Name"}}<h2 class="webkite-result-name">{{displayValue}}</h2>{{/facet}}
+    {{#facet name="Business Name"}}<h2 class="webkite-result-name" itemprop="name">{{displayValue}}</h2>{{/facet}}
     {{#facet name="Geolocation"}}
+      {{#all properties.latitude properties.longitude }}
+        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+            <span itemprop="latitude" content="{{properties.latitude}}"></span>
+            <span itemprop="longitude" content="{{properties.longitude}}"></span>
+          </span>
+        </span>
+      {{/all}}      
       {{#all properties.distance properties.distance_units }}
         <span class="webkite-result-distance">{{properties.distance}} {{properties.distance_units}} {{t "away" default="away"}}</span>
       {{/all}}
@@ -22,27 +30,38 @@
     {{/facet}}
     
     {{#any (find facets name="Address 1") (find facets name="City") (find facets name="State") (find facets name="Zip Code") (find facets name="Country") (find facets name="Address 2")}}
-      <span class="webkite-result-address">
-        {{~#facet name="Address 1"}}<span class="webkite-address-one">{{displayValue}}</span>{{/facet}}
-        {{~#facet name="Address 2"}}<span class="webkite-address-two">{{displayValue}}</span>{{/facet}}
-        {{~#facet name="City"}}<span class="webkite-city">{{displayValue}}</span>{{/facet}}
-        {{~#facet name="State"}}<span class="webkite-state">{{displayValue}}</span>{{/facet}}
-        {{~#facet name="Zip Code"}}<span class="webkite-zip">{{displayValue}}</span>{{/facet~}}
-        {{~#facet name="Country"}}<span class="webkite-country">{{displayValue}}</span>{{/facet}}
+      <span class="webkite-result-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        {{~#any (find facets name="Address 1") (find facets name="Address 2")~}}
+          <span itemprop="streetAddress">
+          {{~#facet name="Address 1"}}<span class="webkite-address-one">{{displayValue}}</span>{{/facet}}
+          {{~#facet name="Address 2"}}<span class="webkite-address-two">{{displayValue}}</span>{{/facet}}
+          </span>
+        {{~/any~}}
+        {{~#facet name="City"}}<span class="webkite-city" itemprop="addressLocality">{{displayValue}}</span>{{/facet}}
+        {{~#facet name="State"}}<span class="webkite-state" itemprop="addressRegion">{{displayValue}}</span>{{/facet}}
+        {{~#facet name="Zip Code"}}<span class="webkite-zip" itemprop="postalCode">{{displayValue}}</span>{{/facet~}}
+        {{~#facet name="Country"}}<span class="webkite-country" itemprop="addressCountry">{{displayValue}}</span>{{/facet}}
       </span>
     {{/any}}
     
+    {{#facet name="Description"}}
+      <meta itemprop="description" content="{{displayValue}}">
+    {{/facet}}
+    
     {{#facet name="Phone Number"}}
-      <span class="webkite-result-phone">{{displayValue}}</span>
+      <span class="webkite-result-phone" itemprop="telephone">{{displayValue}}</span>
     {{/facet}}
         
     <ul class="webkite-list-horizontal">
       <li><a href="#" data-id="{{this.id}}" class="webkite-toggle-item" data-toggle="modal" data-speed="100ms">{{downcase (t "Details" default="details")}}</a></li>
       {{~#facet name="Website"~}}
-        <li><a class="webkite-website" href="{{displayValue}}" target="_blank">{{downcase displayName}}</a></li>
+        <li><a class="webkite-website" href="{{displayValue}}" target="_blank" itemprop="url">{{downcase displayName}}</a></li>
       {{~/facet~}}
       {{~#facet name="Email"~}}
-        <li><a href="mailto:{{displayValue}}">{{downcase displayName}}</a></li>
+        <li>
+          <a href="mailto:{{displayValue}}">{{downcase displayName}}</a>
+          <meta itemprop="email" content="{{displayValue}}">        
+        </li>
       {{~/facet~}}
       {{~#facet name="Facebook"~}}
         <li><a class="webkite-website" href="{{displayValue}}" target="_blank">{{downcase displayName}}</a></li>
