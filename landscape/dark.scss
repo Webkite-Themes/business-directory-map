@@ -439,14 +439,14 @@ $groupButtonHoverColor: rgba(255,255,255,0.2);
       background:rgba(255,255,255,0.12);
       }
     }
-  #webkite-results.#{$themeName}.webkite-#{$colorVariant}-list {
+  #webkite-results-list {
     margin-bottom:$mainGutter/2;
     .webkite-result.webkite-highlight{
       background:$highlightColor;
       color:$medOpacity;
       }
     }
-  .webkite-results-header + #webkite-results.#{$themeName}.webkite-#{$colorVariant}-list {margin-top:-$mainGutter/2;}
+  .webkite-results-header + #webkite-results-list {margin-top:-$mainGutter/2;}
   .webkite-result + .webkite-results-footer {margin-top:$mainGutter/2;}
   .webkite-image-wrapper {
     @include boxedUp;
@@ -787,7 +787,7 @@ $groupButtonHoverColor: rgba(255,255,255,0.2);
   }
 
 #webkite-results.#{$themeName}.webkite-#{$colorVariant}.md{
-  #webkite-results.#{$themeName}.webkite-#{$colorVariant}-list .webkite-result-name{
+  #webkite-results-list .webkite-result-name{
     padding-right:150px;
     + .webkite-result-distance + .webkite-result-category{
       margin-top:-$mainGutter/5;

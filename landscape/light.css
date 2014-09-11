@@ -975,12 +975,12 @@
   color: rgba(0, 0, 0, 0.6); }
   #webkite-results.business-directory-map-landscape.webkite-light .webkite-result:nth-child(even) {
     background: rgba(0, 0, 0, 0.02); }
-#webkite-results.business-directory-map-landscape.webkite-light #webkite-results.business-directory-map-landscape.webkite-light-list {
+#webkite-results.business-directory-map-landscape.webkite-light #webkite-results-list {
   margin-bottom: 10px; }
-  #webkite-results.business-directory-map-landscape.webkite-light #webkite-results.business-directory-map-landscape.webkite-light-list .webkite-result.webkite-highlight {
+  #webkite-results.business-directory-map-landscape.webkite-light #webkite-results-list .webkite-result.webkite-highlight {
     background: #eff5fa;
     color: rgba(0, 0, 0, 0.7); }
-#webkite-results.business-directory-map-landscape.webkite-light .webkite-results-header + #webkite-results.business-directory-map-landscape.webkite-light-list {
+#webkite-results.business-directory-map-landscape.webkite-light .webkite-results-header + webkite-results-list {
   margin-top: -10px; }
 #webkite-results.business-directory-map-landscape.webkite-light .webkite-result + .webkite-results-footer {
   margin-top: 10px; }
@@ -1342,9 +1342,9 @@
 #webkite-results.business-directory-map-landscape.webkite-light.sm .webkite-location-search .webkite-form-block-two {
   padding-left: 45%; }
 
-#webkite-results.business-directory-map-landscape.webkite-light.md #webkite-results.business-directory-map-landscape.webkite-light-list .webkite-result-name {
+#webkite-results.business-directory-map-landscape.webkite-light.md #webkite-results-list .webkite-result-name {
   padding-right: 150px; }
-  #webkite-results.business-directory-map-landscape.webkite-light.md #webkite-results.business-directory-map-landscape.webkite-light-list .webkite-result-name + .webkite-result-distance + .webkite-result-category {
+  #webkite-results.business-directory-map-landscape.webkite-light.md #webkite-results-list .webkite-result-name + .webkite-result-distance + .webkite-result-category {
     margin-top: -4px; }
 #webkite-results.business-directory-map-landscape.webkite-light.md .webkite-result-distance {
   position: absolute;
