@@ -21,7 +21,7 @@
       {{/all}}
     {{~/any}}    
     
-    <div class="webkite-result">
+    <div class="webkite-result webkite-scrollable">
       {{#facet name="Image"~}}
         <div class="webkite-image-wrapper">
           <div class="webkite-image" style="background-image:url({{displayValue}})"><img src="{{displayValue}}"/></div>
@@ -57,6 +57,11 @@
           <span class="webkite-result-phone">{{displayValue}}</span>
         {{/facet}}
         
+        {{#facet name="Description"}}<p class="webkite-description">{{displayValue}}</p>{{/facet}}
+        {{#facet name="Description"}}<p class="webkite-description">{{displayValue}}</p>{{/facet}}
+        {{#facet name="Description"}}<p class="webkite-description">{{displayValue}}</p>{{/facet}}
+        {{#facet name="Description"}}<p class="webkite-description">{{displayValue}}</p>{{/facet}}
+        {{#facet name="Description"}}<p class="webkite-description">{{displayValue}}</p>{{/facet}}
         {{#facet name="Description"}}<p class="webkite-description">{{displayValue}}</p>{{/facet}}
         
         {{#any (find facets name="Website") (find facets name="Email") (find facets name="Fax Number") (find facets name="Facebook") (find facets name="Twitter")}}

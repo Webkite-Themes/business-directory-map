@@ -1158,12 +1158,11 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: fixed;
-  width: 640px;
+  width: 600px;
   left: 50%;
   top: 50%;
-  margin-left: -320px;
-  margin-top: -320px;
-  padding: 20px;
+  margin-left: -300px;
+  margin-top: -300px;
   z-index: 999999; }
 #webkite-results.business-directory-map-landscape.webkite-dark .webkite-result-modal {
   -webkit-box-sizing: border-box;
@@ -1365,8 +1364,9 @@
 /* modal sizings */
 @media screen and (max-width: 670px) {
   #webkite-results.business-directory-map-landscape.webkite-dark .webkite-item-details {
-    width: 100%;
-    left: 0;
+    width: auto;
+    left: 20px;
+    right: 20px;
     margin-left: 0;
     margin-top: -285px; }
   #webkite-results.business-directory-map-landscape.webkite-dark .webkite-modal-content .webkite-item-map {
@@ -1398,8 +1398,10 @@
 
 @media screen and (max-width: 470px) {
   #webkite-results.business-directory-map-landscape.webkite-dark .webkite-item-details {
-    padding: 10px;
-    margin-top: -265px; }
+    left: 10px;
+    right: 10px;
+    margin-top: 0;
+    top: 20px; }
   #webkite-results.business-directory-map-landscape.webkite-dark .webkite-modal-content .webkite-modal-image {
     display: block;
     position: absolute;
@@ -1433,7 +1435,7 @@
 @media screen and (max-height: 620px) {
   #webkite-results.business-directory-map-landscape.webkite-dark .webkite-item-details {
     margin-top: 0;
-    top: 0; } }
+    top: 20px; } }
 
 @media screen and (max-height: 500px) {
   #webkite-results.business-directory-map-landscape.webkite-dark .webkite-modal-content .webkite-result {

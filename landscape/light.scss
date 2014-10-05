@@ -589,12 +589,11 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
   .webkite-item-details{
     @include boxedUp;
     position: fixed;
-    width: 640px;
+    width: 600px;
     left:50%;
     top:50%;
-    margin-left:-320px;
-    margin-top:-320px;
-    padding: $mainGutter;
+    margin-left:-300px;
+    margin-top:-300px;
     z-index: 999999;
     }
   .webkite-result-modal{
@@ -813,8 +812,9 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
   //sm
   #webkite-results.#{$themeName}.webkite-#{$colorVariant}{
     .webkite-item-details{
-      width: 100%;
-      left:0;
+      width: auto;
+      left:$mainGutter;
+      right:$mainGutter;
       margin-left:0;
       margin-top:-285px;
       }
@@ -854,8 +854,10 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
   //xs
   #webkite-results.#{$themeName}.webkite-#{$colorVariant}{
     .webkite-item-details{
-      padding:$mainGutter/2;
-      margin-top:-265px;
+      left:$mainGutter/2;
+      right:$mainGutter/2;
+      margin-top:0;
+      top:$mainGutter;
       }
     .webkite-modal-content{
       .webkite-modal-image {
@@ -903,7 +905,7 @@ $groupButtonHoverColor: rgba(0,0,0,0.08);
 @media screen and (max-height:620px){
   #webkite-results.#{$themeName}.webkite-#{$colorVariant} .webkite-item-details{
     margin-top:0;
-    top:0;
+    top:$mainGutter;
     }
 }
 @media screen and (max-height: 500px){
