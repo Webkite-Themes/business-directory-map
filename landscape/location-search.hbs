@@ -4,7 +4,7 @@
         <input type='hidden' value='{{name}}' name='webkite-location-facet' class='webkite-location-facet' />
         <input type='hidden' value='near' name='webkite-location-operation' class='webkite-location-operation' />
         <div class="webkite-form-block-one">
-          <span class="form-block webkite-search-label" title='{{t "Search within" default="Search within"}}'>{{t "Search within" default="Search within"}}</span><!--
+          <span class="form-block webkite-tooltip webkite-search-label" title='{{t "Search within" default="Search within"}}'>{{t "Search within" default="Search within"}}</span><!--
        --><span class="form-block webkite-search-miles">
             <input type='text' value="{{#with (find ../filters.currentFilters facet=name)}}{{distance}}{{/with}}" name='webkite-location-distance' class='webkite-location-miles' />
           </span><!--
@@ -18,7 +18,7 @@
           </span>
         </div><!--
      --><div class="webkite-form-block-two{{#if (find ../filters.currentFilters facet=name)}} webkite-filter-active{{/if}}">
-          <span class="webkite-search-divider" title='{{t "of" default="of"}}'>{{t "of" default="of"}}</span><!--
+          <span class="webkite-tooltip webkite-search-divider" title='{{t "of" default="of"}}'>{{t "of" default="of"}}</span><!--
        --><span class="form-block webkite-search-address">
             <input type='text' value="{{#with (find ../filters.currentFilters facet=name)}}{{address}}{{/with}}" name='webkite-location-address' placeholder="{{downcase (t 'Address or Landmark' default='address or landmark')}}" class='webkite-location-address' />
           {{~#if (find ../filters.currentFilters facet=name)~}}

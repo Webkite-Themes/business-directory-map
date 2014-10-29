@@ -17,13 +17,13 @@
   {{/facet}}
   <div class="webkite-map-info-details">
     {{#facet name="Geolocation"}}
-      <a href="#" class="webkite-location-add-filter" 
+      <a href="#" class="webkite-tooltip webkite-location-add-filter" 
       data-facet="{{name}}" 
       data-operator="near" 
       data-address="{{displayValue}}" 
       data-distance="2" 
       {{#with (find ../filters.currentFilters facet=name)}}data-unit="{{unit}}"{{/with}} title='{{t "Search Nearby" default="Search Nearby"}}'>{{t "Search Nearby" default="Search Nearby"}}</a>
     {{~/facet~}}
-    <a href="#" data-id="{{this.id}}" class="webkite-toggle-item" data-toggle="modal" data-speed="100ms" title='{{t "Details" default="Details"}}'>{{t "Details" default="Details"}}</a>  
+    <a href="#" data-id="{{this.id}}" class="webkite-tooltip webkite-toggle-item" data-toggle="modal" data-speed="100ms" title='{{t "Details" default="Details"}}'>{{t "Details" default="Details"}}</a>  
   </div>
 </div>

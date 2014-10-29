@@ -15,8 +15,8 @@
       </div>
       {{#all (find facets name="Geolocation") (find facets name="Image")~}}
         <div class="webkite-toggle-group">
-          <a href="#" data-target="#webkite-image-{{id}}" class="webkite-button webkite-button-light webkite-group-toggle webkite-active" title='{{t "Photo" default="Photo"}}'>{{downcase (t "Photo" default="photo")}}</a><!--
-       --><a href="#" data-target="#webkite-map-{{id}} .webkite-item-map" class="webkite-button webkite-button-light webkite-group-toggle" title='{{t "Map" default="Map"}}'>{{downcase (t "Map" default="map")}}</a>
+          <a href="#" data-target="#webkite-image-{{id}}" class="webkite-tooltip webkite-button webkite-button-light webkite-group-toggle webkite-active" title='{{t "Photo" default="Photo"}}'>{{downcase (t "Photo" default="photo")}}</a><!--
+       --><a href="#" data-target="#webkite-map-{{id}} .webkite-item-map" class="webkite-tooltip webkite-button webkite-button-light webkite-group-toggle" title='{{t "Map" default="Map"}}'>{{downcase (t "Map" default="map")}}</a>
         </div>
       {{/all}}
     {{~/any}}    
